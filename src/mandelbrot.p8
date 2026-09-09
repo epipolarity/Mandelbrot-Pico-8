@@ -7,7 +7,6 @@ m_speed=2
 scale=512
 center={x=0.3594,y=-0.6826}
 
-
 function c_mult(c1,c2)
 	return {
 		r=(c1.r * c2.r) - 
@@ -60,7 +59,7 @@ function draw()
 	for x=0,127 do
 	 for y=0,127 do
 	  local z=map_px(x,y)
-	  local its = test(z)
+	  local its=test(z)
 	  local c=its%16
 	  if (its == limit) then
 	  	c=0
@@ -81,7 +80,6 @@ end
 updated = true
 
 function _update()
-
 	if btnp(❎,1) then
 	 home()
 	end
