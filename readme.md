@@ -61,7 +61,9 @@ The code is self-commenting, right?
  - `c_add` - add two complex numbers
  - `c_mag_sqr` - get the square of the magnitude of a complex number - i.e. the pythagorean distance fom 0+0i but stop short of taking the square root - this was about as far as I got with optimization!
  - `test` - test whether a given complex number will 'explode to infinity' by iterating:
+   
    $$z_{n+1}=z_n^2+c$$
+   
    stopping if `c_mag_sqr(z) > 4` because that would be equivalent to checking if `c_mag(z) > 2` but without having to do a `sqrt()`
  - `map_px` - map an XY pixel screen coordinate to a location on the 'complex plane' based on current scale and center position
  - `draw` - for each pixel on the screen, map its position, test how many iterations it lasts without 'blowing up' and then map that number to a colour and draw it.
